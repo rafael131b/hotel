@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@500&display=swap" rel="stylesheet">
+</head>
+<body onload="listar()">
+    <section class="SectionMain">
+        <div class="SectionForm">
+            <h1>Hotel Transilvânia</h1>
+            <form  onsubmit="submitForm(event)">
+                <div class="labelNome">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" class="inputText" minlength="3"  required> 
+                </div>
+                <div class="labelTelefone">
+                    <label for="tel">Telefone</label>
+                    <input type="text" id="tel"  class="inputText"> 
+                </div>
+
+               <div class="labelEmail">
+                <label for="email" class="labelEmail">email</label>
+                <input type="text" id="email"  class="inputText"  > 
+
+               </div>
+
+                <div class="labeldata">
+                    <label for="nascimento" > Nascimento</label>
+                    <input type="date" id="data"  class="inputText"  > 
+                </div>
+
+                <div class="labelTipo">
+                    <label for="tipo" > Monstro</label>
+                    <input type="text" id="tipo"  class="inputText"  > 
+                </div>
+
+
+                <div class="labelRoom">
+                    <label for="room" > Quarto</label>
+                    <input type="text" id="room"  class="inputText"  > 
+                </div>
+              
+            </form>
+            <button type="submit" onclick="cadastrar()" class="buttonCad">Cadastrar</button>
+           
+        </div>
+        <div class="sectionList">
+            
+            <ul id="list"></ul>
+        </div>
+
+    </section>
+   
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
